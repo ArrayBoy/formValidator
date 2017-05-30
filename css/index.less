@@ -1,0 +1,37 @@
+out: ./index.css, sourcemap: true, compress: true
+@bgColor: #ddd;
+*{
+  margin:0;
+  padding: 0;
+}
+input,button{
+  outline: 0;
+}
+body{
+  background:@bgColor;
+  padding: 20px;
+}
+.form-group{
+  width: 80%;
+  margin:0 auto 15px;
+  label{
+    width: 25%;
+    display: inline-block;
+    text-align: right;
+  }
+  input.form-control{
+    width: 60%;
+    height: 34px;
+  }
+}
+.btn{
+  width: 40%;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+.btn-default{
+  background: rgb(65, 168, 99);
+  border: none;
+  cursor: pointer;
+}

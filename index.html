@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS策略模式实现表单验证</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <form action="/" id="registerForm" method="post">
+        <div class="form-group">
+            <label for="user">请输入用户名:</label>
+            <input type="text" class="form-control" id="user" name="userName" placeholder="请输入用户名">
+        </div>
+        <div class="form-group">
+            <label for="pwd">请输入密码:</label>
+            <input type="password" class="form-control" id="pwd" name="passWord" placeholder="请输入密码">
+        </div>
+        <div class="form-group">
+            <label for="pwd">请确认密码:</label>
+            <input type="password" class="form-control" id="repwd" name="repassWord" placeholder="请确认密码">
+        </div>
+        <div class="form-group">
+            <label for="phone">请输入手机号码:</label>
+            <input type="tel" class="form-control" id="phone" name="phoneNumber" placeholder="请输入手机号码">
+        </div>
+        <div class="form-group">
+            <label for="email">请输入邮箱:</label>
+            <input type="text" class="form-control" id="email" name="emailAddress" placeholder="请输入邮箱">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+
+        <div class="form-group">
+            <p id="warn" style="color: #f00; text-align: center;"></p>
+        </div>
+    </form>
+
+    <script type="text/javascript"  src="validator.js"></script>
+</body>
+</html>
